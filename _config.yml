@@ -45,14 +45,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -107,3 +107,8 @@ deploy:
   repo: https://github.com/KristinLee1997/KristinLee1997.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
+
+# 使用hexo-generator-search插件做内容搜索
+search:
+  path: search.xml
+  field: post
