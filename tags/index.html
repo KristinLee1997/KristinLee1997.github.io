@@ -17,7 +17,7 @@
 
 
     <title>标签 | Kristin Blog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/bunny.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/bunny.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Kristin Blog</span>
                 </a>
@@ -140,7 +140,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/bunny.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Kristin Blog</div>
         <div class="logo-desc">
@@ -313,7 +313,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    subtitle
+                Keep Moving
                 
             </div>
 
@@ -325,9 +325,9 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
+                                "System.out.println(&#34;Hello World!&#34;);",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "做正确的事，而不是容易的事",
                             
                         ],
                         startDelay: 300,
@@ -364,10 +364,52 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/Lock/" title="Lock: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Lock" style="background-color: #F9EBEA;">Lock
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/CAS/" title="CAS: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="CAS" style="background-color: #F5EEF8;">CAS
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"Lock","weight":1,"link":"/tags/Lock/"},{"text":"CAS","weight":1,"link":"/tags/CAS/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
@@ -387,6 +429,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">73</span>&nbsp;字
             
             
             
@@ -427,6 +472,10 @@
 
 
 
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
 
 </div>
     </div>
