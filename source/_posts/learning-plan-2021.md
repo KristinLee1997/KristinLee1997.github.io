@@ -3,7 +3,7 @@ title: 2021计划
 date: 2021-01-01 15:28:45
 tags: 2021
 categories: Plan
-img: /medias/zb/zb1.png
+img: https://cdn.jsdelivr.net/gh/KristinLee1997/static_source@main/tiny-image/post-cover/cover1.jpg
 ---
 ## Java基础
 
